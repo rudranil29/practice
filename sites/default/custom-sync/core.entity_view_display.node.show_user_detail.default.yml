@@ -1,0 +1,80 @@
+uuid: 2c9c966d-9bae-441a-bcba-abb447e82b42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.show_user_detail.field_description
+    - field.field.node.show_user_detail.field_email
+    - field.field.node.show_user_detail.field_link
+    - field.field.node.show_user_detail.field_name
+    - field.field.node.show_user_detail.field_user
+    - field.field.node.show_user_detail.field_user_image
+    - node.type.show_user_detail
+  module:
+    - image
+    - link
+    - user
+id: node.show_user_detail.default
+targetEntityType: node
+bundle: show_user_detail
+mode: default
+content:
+  field_description:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_email:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_link:
+    weight: 106
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_user:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_user_image:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

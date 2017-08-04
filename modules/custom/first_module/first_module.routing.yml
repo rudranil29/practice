@@ -1,0 +1,15 @@
+first_module.content:
+  path: '/first'
+  defaults:
+    _controller: 'Drupal\first_module\Controller\FirstController::content'
+    _title: 'Hello world'
+  requirements:
+    _permission: 'access content'
+
+first_module.example:
+ path: '/mymodule/example'
+ defaults:
+   _form: '\Drupal\first_module\Form\MyModuleExample'
+   _title: 'Node Creation'
+ requirements:
+   _permission:  'access content'

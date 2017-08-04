@@ -1,0 +1,25 @@
+uuid: 0d4bb2e6-af4f-4102-a500-c23bb3367411
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:6a23678d-7af8-4f7f-8948-199739d6259f'
+  module:
+    - block_content
+  theme:
+    - learn
+id: learn_hello_kolkata_region_block
+theme: learn
+region: navigation
+weight: -9
+provider: render_block
+plugin: 'block_content:6a23678d-7af8-4f7f-8948-199739d6259f'
+settings:
+  id: 'block_content:6a23678d-7af8-4f7f-8948-199739d6259f'
+  label: 'Demo Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

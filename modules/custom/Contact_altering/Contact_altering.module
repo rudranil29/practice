@@ -1,0 +1,45 @@
+<?php
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Form\FormStateInterface;
+
+function Contact_altering_form_alter(&$form, &$form_state, $form_id) {
+ // see if webform_submission_contact_node_69_form is in the form_id
+  if($form_id == 'webform_submission_contact_node_4_form')
+  {
+    $form['elements']['name']['#title'] = "NAME";
+    kint($form);
+ // $form['#validate'][] = 'Contact_altering_custom_validate';
+     $form['#attributes']['novalidate'] = 'novalidate';
+
+
+ /*if(strstr($form_id, 'webform_submission_contact_node_4_form')) {
+   $form['actions']['submit']['#ajax'] = array(
+     'callback' => 'Contact_altering_webform_js_submit',
+     'wrapper' => 'webform-submission-contact-node-4-form',
+     'method' => 'replace',
+     'effect' => 'fade',
+   );
+ }*/
+}
+}
+/*function Contact_altering_custom_validate($form, $form_state)
+{
+    $name = $form_state -> getvalue('name');
+    if(is_numeric($name))
+    {
+      $form_state->setErrorByName('name', t('That is not a valid name.'));
+    }
+    return $form_state;
+}*/
+
+/*function Contact_altering_webform_js_submit($form, $form_state) {
+ // define the $sid variable (submission id from webform)
+   $confirmation = array(
+     '#type' => 'markup',
+     '#markup' => t('Thank You For Submitting!!'),
+     );
+
+     // return the confirmation message
+   return $confirmation;
+ }
+*/

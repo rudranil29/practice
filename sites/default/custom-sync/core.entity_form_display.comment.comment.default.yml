@@ -1,0 +1,18 @@
+uuid: 5f10077e-8a23-408c-8589-2096831e4697
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.field.comment.comment.comment_body
+_core:
+  default_config_hash: I0Pa0aQvT_jawlPo9oz4FE3h_ickc55dYKTPl6gILes
+id: comment.comment.default
+targetEntityType: comment
+bundle: comment
+mode: default
+content: {  }
+hidden:
+  author: true
+  comment_body: true
+  subject: true

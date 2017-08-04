@@ -1,0 +1,17 @@
+name: Endymion
+description: Drupal 8 Starter Theme from Rudranil
+type: theme
+core: 8.x
+libraries:
+  - endymion/global-css
+  - endymion/global-js
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/align.module.css
+
+regions:
+  content: 'Main content'
+  header: 'Header'
+  footer: 'Footer'
+  sidebar: 'sidebar'
+  main_navigation: 'Main Navigation'

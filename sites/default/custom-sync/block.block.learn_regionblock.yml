@@ -1,0 +1,25 @@
+uuid: 41fa1482-b771-4142-856a-c65602ad7757
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3ad5f587-1791-47ce-bf20-bb56b2b3201f'
+  module:
+    - block_content
+  theme:
+    - learn
+id: learn_regionblock
+theme: learn
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:3ad5f587-1791-47ce-bf20-bb56b2b3201f'
+settings:
+  id: 'block_content:3ad5f587-1791-47ce-bf20-bb56b2b3201f'
+  label: 'Region Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

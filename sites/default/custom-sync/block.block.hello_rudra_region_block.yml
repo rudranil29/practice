@@ -1,0 +1,25 @@
+uuid: a0805be4-4164-48bb-9628-31f0e6aa21ce
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:1170a2dc-9550-449d-93ae-d09bb58b03fb'
+  module:
+    - block_content
+  theme:
+    - drupaltheme
+id: hello_rudra_region_block
+theme: drupaltheme
+region: ''
+weight: -100
+provider: render_block
+plugin: 'block_content:1170a2dc-9550-449d-93ae-d09bb58b03fb'
+settings:
+  id: 'block_content:1170a2dc-9550-449d-93ae-d09bb58b03fb'
+  label: 'Demo Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

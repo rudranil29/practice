@@ -1,0 +1,25 @@
+uuid: 734f41e5-ca27-489b-ab5b-1d1350314219
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3ad5f587-1791-47ce-bf20-bb56b2b3201f'
+  module:
+    - block_content
+  theme:
+    - drupaltheme
+id: hello_innoraft_region_block
+theme: drupaltheme
+region: footer
+weight: -9
+provider: render_block
+plugin: 'block_content:3ad5f587-1791-47ce-bf20-bb56b2b3201f'
+settings:
+  id: 'block_content:3ad5f587-1791-47ce-bf20-bb56b2b3201f'
+  label: 'Demo Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 1ba86317-a995-425e-b6b5-cd5ce8d30ea8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - endymion
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: endymion_powered
+theme: endymion
+region: footer
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

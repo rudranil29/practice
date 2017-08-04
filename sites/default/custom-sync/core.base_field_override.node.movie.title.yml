@@ -1,0 +1,18 @@
+uuid: e5a150d4-6320-4881-a214-27f6a1b33f5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie
+id: node.movie.title
+field_name: title
+entity_type: node
+bundle: movie
+label: 'Movie name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: cca8634b-ce53-4607-bd37-d0b8abb305d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - first_module
+  theme:
+    - learn
+id: learn_helloblock
+theme: learn
+region: navigation
+weight: -7
+provider: null
+plugin: hello_block
+settings:
+  id: hello_block
+  label: 'Hello block'
+  provider: first_module
+  label_display: visible
+visibility: {  }

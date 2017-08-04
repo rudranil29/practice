@@ -1,0 +1,5 @@
+name: Render Block
+type: module
+description: 'Allows users to Render a block'
+package: Custom
+core: '8.x'

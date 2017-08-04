@@ -1,0 +1,22 @@
+uuid: 60c292dc-b398-42d4-b6e5-e7f9618c29f7
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - endymion
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: endymion_search
+theme: endymion
+region: content
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

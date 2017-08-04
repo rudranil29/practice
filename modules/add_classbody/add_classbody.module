@@ -1,0 +1,39 @@
+<?php
+
+    /**
+     * Prepares variables for the html.html.twig template.
+     */
+
+    use Drupal\taxonomy\Entity\Term;
+    use Drupal\Component\Utility\Html;
+
+    function add_classbody_preprocess_html(&$variables) {
+
+      if ($node = \Drupal::routeMatch()->getParameter('node')) {
+
+
+
+        /**
+         * Get the term id from the 'field_section' taxonomy field.
+         * If greater than zero, load the term and acquire the name value
+         * as a css safe value.
+        */
+        if($node->hasField('field_tags')) {
+          $tid = $node->get('field_tags')->target_id;
+          if($tid > 0) {
+            $term_object = Term::load($tid);
+            $variables['attributes']['class'][] = 'terms--' . Html::getClass($term_object->get('name')->value);
+          }
+        }
+
+        /**
+         * Get the node id from the node object.
+         * If greater than zero, add the node id to body classes
+        */
+        $nid = $node->get('nid')->value;
+        if($nid > 0) {
+          $variables['attributes']['class'][] = 'page--node-' . $nid;
+        }
+      }
+
+    }

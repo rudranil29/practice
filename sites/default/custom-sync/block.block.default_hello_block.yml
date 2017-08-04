@@ -1,0 +1,25 @@
+uuid: 6301bfe6-36b9-4c1e-84b1-f8b687fa1cb7
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b4fe0b43-0dd9-4453-b4ab-e324e71cc01d'
+  module:
+    - block_content
+  theme:
+    - drupaltheme
+id: default_hello_block
+theme: drupaltheme
+region: navigation
+weight: -9
+provider: block_content
+plugin: 'block_content:b4fe0b43-0dd9-4453-b4ab-e324e71cc01d'
+settings:
+  id: 'block_content:b4fe0b43-0dd9-4453-b4ab-e324e71cc01d'
+  label: 'Demo Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,41 @@
+uuid: ea80dc61-cd9b-43dd-b102-2b6bdc816e68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.field_artist.body
+    - field.field.node.field_artist.field_band_members
+    - field.field.node.field_artist.field_comments
+    - node.type.field_artist
+  module:
+    - comment
+    - text
+    - user
+id: node.field_artist.default
+targetEntityType: node
+bundle: field_artist
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_comments:
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_band_members: true

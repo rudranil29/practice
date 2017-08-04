@@ -1,0 +1,18 @@
+uuid: a9848483-db83-41c9-a5bf-19b8fa78d0c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.field_artist
+id: node.field_artist.title
+field_name: title
+entity_type: node
+bundle: field_artist
+label: 'LINKING PARK'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

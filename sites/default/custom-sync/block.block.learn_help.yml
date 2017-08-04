@@ -1,0 +1,22 @@
+uuid: abd960ee-a6ef-42fc-983d-c5945aa0b77a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - learn
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: learn_help
+theme: learn
+region: navigation
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

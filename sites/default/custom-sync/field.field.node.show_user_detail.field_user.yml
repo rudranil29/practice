@@ -1,0 +1,28 @@
+uuid: b284c08d-4c59-4df7-b8c7-d103d5a6ea38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user
+    - node.type.show_user_detail
+id: node.show_user_detail.field_user
+field_name: field_user
+entity_type: node
+bundle: show_user_detail
+label: user
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

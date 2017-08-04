@@ -1,0 +1,28 @@
+uuid: 876bef84-40d4-4dd9-8b6c-7d2ee79a20fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_band_members
+    - node.type.band_members
+    - node.type.field_artist
+id: node.field_artist.field_band_members
+field_name: field_band_members
+entity_type: node
+bundle: field_artist
+label: band_members
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      band_members: band_members
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

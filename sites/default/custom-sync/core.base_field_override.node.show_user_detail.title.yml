@@ -1,0 +1,18 @@
+uuid: 3897a2a8-ea36-40e9-bf61-f218b3b4c9ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.show_user_detail
+id: node.show_user_detail.title
+field_name: title
+entity_type: node
+bundle: show_user_detail
+label: 'New User Detail'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

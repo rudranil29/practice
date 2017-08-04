@@ -1,0 +1,20 @@
+<?php
+/**
+ * Implements hook_form_alter().
+ */
+function login_redirect_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  switch ($form_id) {
+    // Alter login form and add own custom submit handler.
+    case 'user_login_form':
+      $form['#submit'][] = '_login_redirect_user_login_form_submit';
+      break;
+  }
+}
+/**
+ * Custom submit handler for login form.
+ */
+function _login_redirect_user_login_form_submit($form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  // Set redirect to login form.
+  $form_state->setRedirect('login_redirect.go');
+}
+?>

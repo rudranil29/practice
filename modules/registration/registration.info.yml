@@ -1,0 +1,5 @@
+name: Registration Form
+description: Simple Registration form used store data into a database
+core: 8.x
+package: Custom
+type: module

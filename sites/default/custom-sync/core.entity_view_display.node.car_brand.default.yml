@@ -1,0 +1,28 @@
+uuid: 2bb13d26-355b-4281-a2f7-dc3967e88519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.car_brand.body
+    - node.type.car_brand
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: nrxgQiB5bm-sMZNHZzts45Jc1LwnmNMWQTk6exivYUQ
+id: node.car_brand.default
+targetEntityType: node
+bundle: car_brand
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

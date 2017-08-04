@@ -1,0 +1,32 @@
+uuid: 10958783-75cd-4194-b246-5e51e004320e
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.webform_contact
+  module:
+    - ctools
+    - views
+  theme:
+    - drupaltheme
+id: views_block__webform_contact_block_1
+theme: drupaltheme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:webform_contact-block_1'
+settings:
+  id: 'views_block:webform_contact-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles:
+      touch_us: touch_us
+    negate: false
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'

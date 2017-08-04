@@ -1,0 +1,22 @@
+uuid: bb668421-fef5-4212-a092-6e075b56e2ac
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - endymion
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: endymion_messages
+theme: endymion
+region: content
+weight: 1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

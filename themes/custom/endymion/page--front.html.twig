@@ -1,0 +1,35 @@
+<header class="main-header" role="banner">
+  <div class="container">
+    {{ page.header }}
+    <div class="main-navigation">
+      {{ page.main_navigation }}
+    </div>
+  </div>
+</header>
+
+<section>
+<div class="container">
+<div class="row">
+<center> Latest Movies </center>
+<div class= "col-md-12">
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <div class="layout-content">
+      {{ page.content }}
+    </div>{# /.layout-content #}
+
+  </main>
+</div>
+</div>
+ </div>
+ </section>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+      <div class="container">
+      <center><h3>{{ page.footer }}</h3></center>
+    </div>
+    </footer>
+  {% endif %}

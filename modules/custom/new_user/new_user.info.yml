@@ -1,0 +1,5 @@
+name: NEW USER
+type: module
+description: 'Allows to create new user.'
+package: Custom
+core: '8.x'

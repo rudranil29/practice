@@ -1,0 +1,22 @@
+uuid: c0e8b71e-1048-4577-b1c5-76c30a4a6294
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - learn
+_core:
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
+id: learn_breadcrumbs
+theme: learn
+region: header
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

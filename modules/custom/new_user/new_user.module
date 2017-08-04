@@ -1,0 +1,52 @@
+<?php
+use \Drupal\node\Entity\Node;
+
+function new_user_user_insert($account) {
+$node = Node::create([
+
+      'type' => 'show_user_detail',
+
+      'title' => 'New User Detail',
+
+      'field_name' => $account->name,
+
+      'field_email' => $account->mail,
+
+      'field_description' => 'A new user is created',
+
+      'field_user_image' =>  $account->user_picture,
+
+      'field_user' => 'default',
+
+      'field_link' => 'http://practice.dev/user/'.$account->id().'/edit',
+
+
+
+]);
+
+   drupal_register_shutdown_function('new_user_node_update', $node,$account);
+
+
+}
+
+function new_user_node_update($node,$account) {
+
+  $node->set('field_user', $account);
+
+  $node->save();
+
+
+}
+function new_user_form_alter(&$form, &$form_state, $form_id) {
+  $current_time = date('G');
+  if ($current_time >= 12 && $current_time <= 5)
+  {
+  switch($form_id) {
+    case 'user_login':
+    case 'user_register_form':
+      $form['#access'] = FALSE;
+       drupal_set_message(t("Registration closed from 12 to 6!"), 'No registration');
+    break;
+   }
+ }
+}

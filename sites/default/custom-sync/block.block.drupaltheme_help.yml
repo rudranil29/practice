@@ -1,0 +1,22 @@
+uuid: ec0a8f12-cbac-44da-ae62-c88620f0c3d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupaltheme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: drupaltheme_help
+theme: drupaltheme
+region: help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: 3b71db60-0352-45b0-b2f8-18fcd6247688
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.band_members
+id: node.band_members.title
+field_name: title
+entity_type: node
+bundle: band_members
+label: Members
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

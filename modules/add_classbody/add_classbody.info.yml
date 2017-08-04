@@ -1,0 +1,6 @@
+name: Add Class Body
+description: adding class to body
+package: Custom
+type: module
+version: 1.0
+core: 8.x

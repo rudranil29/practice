@@ -1,0 +1,22 @@
+uuid: 4da559cf-eb12-4736-b34b-186e506b0706
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.band_members
+  module:
+    - text
+id: node.band_members.body
+field_name: body
+entity_type: node
+bundle: band_members
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

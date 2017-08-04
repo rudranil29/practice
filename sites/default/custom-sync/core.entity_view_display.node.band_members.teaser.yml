@@ -1,0 +1,28 @@
+uuid: 6a58bc05-d15b-4cef-a5aa-57f343b6d95f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.band_members.body
+    - node.type.band_members
+  module:
+    - text
+    - user
+id: node.band_members.teaser
+targetEntityType: node
+bundle: band_members
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

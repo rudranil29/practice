@@ -1,0 +1,24 @@
+<?php
+
+
+ /**
+ * Implements hook_install().
+  */
+ function render_block_install(){
+      // Add Demo block.
+   $block_content = Drupal\block_content\Entity\BlockContent::create([ 'type' => 'basic', 'info' => 'Hello Block', ]);
+      $block_content->set('body', 'This is demo block for placing a block in a region.');
+      $block_content->save();
+      $block = Drupal\block\Entity\Block::create([
+         'id' => 'hello_kolkata_region_block',
+         'plugin' => 'block_content:' . $block_content->uuid(),
+         'region' => 'primary',
+         'provider' => 'render_block',
+         'weight' => -100,
+         'theme' => 'bootstrap_childtheme',
+         'visibility' => array(),
+          // array('request_path' => array('id' => 'request_path' , 'pages' => '/demopage')),
+        'settings' => [ 'label' => 'Demo Block', 'label_display' => 'visible', ], ]
+      );
+      $block->save();
+ }

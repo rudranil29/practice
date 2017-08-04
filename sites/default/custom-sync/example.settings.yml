@@ -1,0 +1,2 @@
+url: 'http://practice.dev/node/2'
+script: 'alert(''hello'');'

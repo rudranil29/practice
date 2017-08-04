@@ -1,0 +1,25 @@
+uuid: 25f581d1-8519-48e9-aaf0-97cdd67aee6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.artist
+  module:
+    - views
+  theme:
+    - learn
+id: learn_views_block__artist_block_1
+theme: learn
+region: navigation
+weight: -9
+provider: null
+plugin: 'views_block:artist-block_1'
+settings:
+  id: 'views_block:artist-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

@@ -1,0 +1,7 @@
+example.settings:
+  path: '/admin/structure/adminform/settings'
+  defaults:
+    _form: '\Drupal\adminform\Form\exampleSettingsForm'
+    _title: 'example'
+  requirements:
+    _permission: 'administer site configuration'

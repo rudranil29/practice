@@ -1,0 +1,16 @@
+uuid: 836108c6-de4f-4786-9f83-9a779db7499e
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - custom_content_type
+_core:
+  default_config_hash: liopa91-2JCAmUkWMzFVGzQsaIk5wOhcYkUSfp-0eXs
+name: 'Car Brand'
+type: car_brand
+description: 'Content type that can be used to provide additional information on <em>Car Brands</em>'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,28 @@
+uuid: 8f01e228-7354-40ac-8fc2-d6c712e557c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.field_artist.body
+    - node.type.field_artist
+  module:
+    - text
+    - user
+id: node.field_artist.teaser
+targetEntityType: node
+bundle: field_artist
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

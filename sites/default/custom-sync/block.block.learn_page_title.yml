@@ -1,0 +1,20 @@
+uuid: 88ea7812-59ef-437e-93b0-b596ec05e840
+langcode: en
+status: true
+dependencies:
+  theme:
+    - learn
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: learn_page_title
+theme: learn
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
