@@ -13,9 +13,7 @@ class login_redirectController extends ControllerBase {
    * @return array
    */
   public function build_body() {
-
-    header("Location: http://practice.dev/node/9");
-   return;
+         return new \Symfony\Component\HttpFoundation\RedirectResponse('/node/11');
     }
 
 }
